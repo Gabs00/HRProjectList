@@ -3,7 +3,11 @@
   "version": "0.0.0",
   "dependencies": {
     "express": "^4.10.0",
-    "nodemon": "^1.2.1"
+    "nodemon": "^1.2.1",
+    "passport": "^0.2.1",
+    "passport-github": "^0.1.5",
+    "passport-google": "^0.3.0",
+    "pem": "^1.4.1"
   },
   "scripts": {
     "start": "nodemon index.js",

@@ -23,4 +23,18 @@ angular.module('HRP')
 .controller('IntController',['$scope', function(scope){}])
 
 //Controller for login and authentication
-.controller('AuthController',['$scope', function(scope){}]);
+.controller('AuthController',['$scope', 'Auth', function(scope, Auth){
+  scope.authGoogle = function(){
+    Auth.google()
+      .success(function(){
+        console.log('success');
+      })
+      .error(function(){
+        console.log('failure');
+      });
+  };
+
+  scope.authGithub = function(){
+    console.log('success');
+  }
+}]);

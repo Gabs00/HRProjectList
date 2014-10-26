@@ -8,7 +8,7 @@ angular.module('HRP', ['ui', 'ui.utils','ui.router', 'ui.bootstrap'])
     .state('signup',{
       url:'/signup',
       templateUrl: './app/partials/signup.html',
-      controller: 'MainCtrl'
+      controller: 'AuthController'
     })
     .state('login', {
       url:'/login',
@@ -18,7 +18,7 @@ angular.module('HRP', ['ui', 'ui.utils','ui.router', 'ui.bootstrap'])
     .state('logout', {
       url:'/logout',
       templateUrl:'./app/partials/logout.html',
-      controller: 'MainCtrl'
+      controller: 'AuthController'
     })
     .state('home', {
       url:'/home',

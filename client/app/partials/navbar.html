@@ -1,3 +1,4 @@
 <div id="navigation">
+  <a ui-sref="login" ng-if="showLoggin">Login</a>
   <a ng-repeat="links in nav" ui-sref="{{ links.name }}" class="link {{ links.name }}"> {{ links.title }}</a>
 </div>

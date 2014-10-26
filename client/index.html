@@ -1,27 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title></title>
     <link rel="stylesheet" type="text/css" href="libs\bootstrap\dist\css\bootstrap.css"/>
     <link rel="stylesheet" type="text/css" href="libs\angular-ui\build\angular-ui.css">
   </head>
-  <body ng-app="HRP" ng-controller="MainCtrl">
-    <h2>Indeed, we are here</h2>
-    <cw-navbar ng-controller="LinksController"></cw-navbar>
-    <ui-view>
-    </ui-view>
-
+  <body>
+    <div class="container" ng-app="HRP" ng-controller="MainCtrl">
+        <cw-navbar ng-controller="LinksController">
+        </cw-navbar>
+        <ui-view>
+        </ui-view>
+    </div>
     <!-- Script tags load below here -->
-    <script src="libs\angular\angular.js"></script>
     <script src="libs\jquery\dist\jquery.js"></script>
+    <script src="libs\angular\angular.js"></script>
     <script src="libs\bootstrap\dist\js\bootstrap.js"></script>
     <script src="libs\angular-bootstrap\ui-bootstrap.js"></script>
     <script src="libs\angular-ui\build\angular-ui.js"></script>
     <script src="libs\angular-ui-router\release\angular-ui-router.js"></script>
     <script src="libs\angular-ui-utils\ui-utils.js"></script>
     <script src="app.js"></script>
+    <script src="app\factory\auth.service.js"></script>
     <script src="app\controllers\main.controller.js"></script>
     <script src="app\controllers\controllers.js"></script>
-    <script src="app\directives\cw-nav.directive.js"></script>
+    <script src="app\directives\directives.js"></script>
   </body>
 </html>
