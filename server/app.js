@@ -25,5 +25,5 @@ var port = config.port;
 module.exports.listen = function(){
   server.listen(port, function(){
     console.log('Server listening on port', port);
-  })
+  });
 };
